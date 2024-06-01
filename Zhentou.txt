@@ -1042,6 +1042,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
+	Name = "北极脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/KwARpDxV",true))()
+end
+})
+Tab:AddButton({
 	Name = "bin脚本中心",
 	Callback = function()
 local library = loadstring(game:HttpGet("https://pastebin.com/raw/nBq2D86q"))()
@@ -2967,6 +2973,12 @@ Tab:AddButton({
 	Name = "指令(inf)",
 	Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end
+})
+Tab:AddButton({
+	Name = "小偷模拟器",
+	Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/adrician/Thief-Simulator---GUI/main/Thief%20sim.lua"),true))()
 end
 })
     else

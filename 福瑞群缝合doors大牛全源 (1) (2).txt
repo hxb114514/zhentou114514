@@ -92,6 +92,10 @@ elseif a=="laksjdhfg25864"then
 _G.she=true
 elseif a=="520xiaoshuai"then
 _G.she=true
+elseif a=="meisjeefhahaha"then
+_G.she=true
+elseif a=="meisjeefhahaha2"then
+_G.she=true
 end
 if _G.she==true then
     local CoreGui = game:GetService("StarterGui")

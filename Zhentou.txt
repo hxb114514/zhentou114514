@@ -961,7 +961,7 @@ local function CreateGUI(title)
         frame.Size.Y.Offset - 0.25 * frame.Size.Y.Offset)
     disagreeButton.BackgroundTransparency = 0
     disagreeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    disagreeButton.Text = "stop"
+    disagreeButton.Text = "不同意"
     disagreeButton.TextColor3 = Color3.new(255, 0, 0)
     disagreeButton.TextSize = math.floor(frame.Size.Y.Offset * 0.08)
     disagreeButton.Font = Enum.Font.SourceSans
@@ -977,7 +977,7 @@ local function CreateGUI(title)
         frame.Size.Y.Offset - 0.25 * frame.Size.Y.Offset)
     agreeButton.BackgroundTransparency = 0
     agreeButton.BackgroundColor3 = Color3.fromRGB(106, 159, 255)
-    agreeButton.Text = "开始"
+    agreeButton.Text = "同意"
     agreeButton.TextColor3 = Color3.new(255, 255, 255)
     agreeButton.TextSize = math.floor(frame.Size.Y.Offset * 0.08)
     agreeButton.Font = Enum.Font.SourceSans 
@@ -988,7 +988,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
-    agreeFrame.Text = "1.枕头温馨提示.\n 2.这个脚本很有可能加载错误.\n 3.如果加载错误别怪我."
+    agreeFrame.Text = "1.枕头温馨提示.\n 2.这个脚本可能加载错误.\n 3.加载错误别怪我."
     agreeFrame.TextWrapped = true
 
     
@@ -1000,6 +1000,20 @@ local function CreateGUI(title)
     corner.Parent = agreeFrame
 
     agreeFrame.Parent = frame
+
+    local agreeCorner = Instance.new("UICorner")
+    agreeCorner.CornerRadius = UDim.new(0, 10)
+    agreeCorner.Parent = agreeButton
+    local minimizeButton = Instance.new("TextButton")
+    minimizeButton.Name = "MinimizeButton"
+    minimizeButton.Size = UDim2.new(0, 40, 0, 40)
+    minimizeButton.Position = UDim2.new(1, -65, 0, 10)
+    minimizeButton.BackgroundTransparency = 0
+    minimizeButton.BackgroundColor3 = Color3.fromRGB(199, 199, 199)
+    minimizeButton.Text = "-"
+    minimizeButton.TextSize = 28  
+    minimizeButton.TextColor3 = Color3.new(0, 0, 0)
+    minimizeButton.Font = Enum.Font.SourceSans
     minimizeButton.Parent = frame
 
     local isMinimized = false
@@ -1049,7 +1063,7 @@ local function CreateGUI(title)
     end)
     agreeButton.MouseButton1Click:Connect(function()
         AnimateExit()
-loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
+getgenv().XC="作者XC"loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
     end)
 end
 local myTitle = "注意" 

@@ -250,10 +250,9 @@ print("反挂机开启")
 		   wait(1)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
-loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))();--北京时间;
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/qz5Vsxuk'))();
 
-local Window = OrionLib:MakeWindow({Name = "枕头脚本", HidePremium = false, SaveConfig = true,IntroText = "枕头脚本(版本1.5使用了WAS前格式)", ConfigFolder = "看你m"})
+local Window = OrionLib:MakeWindow({Name = "枕头脚本", HidePremium = false, SaveConfig = true,IntroText = "枕头脚本", ConfigFolder = "看你m"})
 local about = Window:MakeTab({
     Name = "信息",
     Icon = "rbxassetid://4483345998",
@@ -263,6 +262,12 @@ local about = Window:MakeTab({
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+Tab:AddButton({
+	Name = "打开北京时间",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))();--北京时间;
+end
+})
 local Tab = Window:MakeTab({
   Name = "通用脚本",
   Icon = "rbxassetid://4483345998",
@@ -1040,6 +1045,12 @@ local Tab = Window:MakeTab({
     Name = "别人的脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "XC(卡密x)",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/PAFzYx0F"))()
+end
 })
 Tab:AddButton({
 	Name = "北极脚本",

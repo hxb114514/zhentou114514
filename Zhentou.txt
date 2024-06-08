@@ -335,6 +335,13 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
+	Name = "北京时间",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))()
+end
+})
+
+Tab:AddButton({
 	Name = "Acrylix（通用）",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/3dsonsuce/acrylix/main/Acrylix'))()
@@ -516,12 +523,6 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end
 })
-Tab:AddButton({
-	Name = "北京时间点击打开",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))()
-end
-})
 local Tab = Window:MakeTab({
     Name = "doors",
 	Icon = "rbxassetid://4483345998",
@@ -533,6 +534,19 @@ Tab:AddButton({
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
 end
 })    
+Tab:AddButton({
+	Name = "ms(最新)",
+	Callback = function()
+getgenv().MSHUB_PLUS = true
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+end
+})
+Tab:AddButton({
+	Name = "微山旧版本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua
+end
+})
 Tab:AddButton({
 	Name = "低回拉穿墙(已汉化)",
 	Callback = function()

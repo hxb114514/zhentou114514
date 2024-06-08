@@ -340,7 +340,6 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/6xQ5gtbj"))()
 end
 })
-
 Tab:AddButton({
 	Name = "Acrylix（通用）",
 	Callback = function()

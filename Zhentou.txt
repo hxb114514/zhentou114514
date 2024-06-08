@@ -534,12 +534,6 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/ma
 end
 })
 Tab:AddButton({
-	Name = "微山旧版本",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua
-end
-})
-Tab:AddButton({
 	Name = "低回拉穿墙(已汉化)",
 	Callback = function()
 loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()

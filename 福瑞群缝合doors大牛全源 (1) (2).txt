@@ -149,6 +149,13 @@ local player = Window:MakeTab({
 })
 
 player:AddButton({ 
+	Name = "点击返回枕头脚本",
+	Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/hxb114514/zhentou114514/main/Zhentou.txt"))()
+  	end
+})
+
+player:AddButton({ 
 	Name = "手电筒(2024)",
 	Callback = function()
   loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()

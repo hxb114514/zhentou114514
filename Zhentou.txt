@@ -90,7 +90,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
-    agreeFrame.Text = "1.账号封禁,概不负责.\n 2.本脚本含有卡密系统确定执行?.\n 3.更新时间为6月8日下午4:38."
+    agreeFrame.Text = "1.账号封禁,概不负责.\n 2.本脚本含有卡密系统确定执行?.\n 3.更新时间为6月20日下午7:13."
     agreeFrame.TextWrapped = true
 
     
@@ -521,6 +521,12 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+Tab:AddButton({
+	Name = "ctl（作者把它复活了在卡密系统直接点确定）",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hxb114514/zhentou114514/main/%E7%A6%8F%E7%91%9E%E7%BE%A4%E7%BC%9D%E5%90%88doors%E5%A4%A7%E7%89%9B%E5%85%A8%E6%BA%90%20(1)%20(2).txt"))()
+end
+})    
 Tab:AddButton({
 	Name = "ms(未汉化)",
 	Callback = function()

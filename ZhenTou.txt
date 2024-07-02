@@ -3159,6 +3159,12 @@ end
 Tab:AddButton({
 	Name = "solsRNG(没有卡密)",
 	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/123hubd7gh/123hubd7gh/main/Sol's%20RNG"))()
+end
+})
+Tab:AddButton({
+	Name = "solsRNGESP自动捡东西（可能有bug）",
+	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Looser3itx/Hmmmmmmmmmmmmmmmmmmmmmmmmmmmm/main/loader.lua"))()
 end
 })
